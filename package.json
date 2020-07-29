@@ -1,0 +1,23 @@
+{
+  "name": "SlackTodayCh2Line",
+  "version": "1.0.0",
+  "description": "collect today's slack channel msg and post to LINE",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=main",
+    "watch": "npm-watch start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "watch": {
+    "start": "*.js"
+  },
+  "author": "hisa-shimoji",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.6.0",
+    "@slack/bolt": "^2.1.1",
+    "line-notify-nodejs": "^1.0.0",
+    "moment-timezone": "^0.5.31",
+    "npm-watch": "^0.6.0"
+  }
+}
